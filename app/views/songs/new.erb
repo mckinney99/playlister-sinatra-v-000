@@ -1,7 +1,7 @@
 <h1>Build a new song!</h1>
     <form action="/songs" method="post">
       <label for="name">Name:</label>
-      <input type="text" name="Name" id="name" value="">
+      <input type="text" name="Name" id="name">
       <br></br>
       <% Genre.all.each do |genre| %>
       <input type="checkbox" name="genres[]" value="<%=genre.id%>" id="<%=genre.name%>"><%=genre.name.capitalize%></input>
